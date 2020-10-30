@@ -1,0 +1,207 @@
+:root{
+    --bg: #202743;
+    --white: #FFFFFF;
+    --stcappbg: #13137A;
+}
+*{
+    box-sizing: border-box;
+}
+
+/************************* Home *************************/
+#Home{
+    background-color: var(--bg);
+    color: var(--white);
+}
+#Home .container .row{
+    height: 100vh;
+}
+
+#PatternHome{
+        position: absolute; 
+        right:5vw; 
+        top:20vh;
+        width: 20vw;
+        height: 40vh;
+}
+
+/************************* Focus *************************/
+
+#Focus{
+    background-color: var(--white);
+    color: var(--bg);
+}
+
+#Focus .container {
+    height: 200vh;
+}
+
+#Focus .container .row{
+    height: 100vh;
+}
+
+#PatternFocusTop{
+    position: absolute;
+    top:100vh;
+    right: 0;
+}
+#PatternFocusMiddle{
+    position: absolute;
+    top:200vh;
+    left: 0;
+    margin-top: -5vh;
+}
+#ImgFocusBinoculars{
+    display: block; 
+    margin: auto;
+}
+
+/************************* Partnership *************************/
+
+#Partnership{
+    background-color: var(--bg);
+    color: var(--white);
+}
+
+#Partnership .container > .row{
+    height: 100vh;
+}
+
+#ImgMLA{
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    height: 15vh;
+}
+
+#ImgAlexaSnap img{
+    margin-top: 5vh;
+    height: 15vh;
+    margin-bottom: 5vh;
+}
+
+/************************* Board *************************/
+#Board .container{
+    height:200vh;
+    background-color: var(--white);
+    color: var(--bg);
+}
+#Board .container .row{
+    height: 40vh;
+}
+#Board .container .row img{
+    margin: auto;
+    display: block;
+}
+#Board .container .row p{
+    margin:0;
+}
+
+/************************* App *************************/
+
+#App{
+    background-color: var(--stcappbg);
+    color: var(--white);
+}
+
+#App .container .row{
+    height:100vh;
+}
+
+#AppIcons img{
+    margin: 5vh;
+}
+
+/************************* Contact *************************/
+
+#Contact .container{
+    height: 200vh;
+}
+
+#Contact .container .row{
+    height: 100vh;
+}
+
+/************************* MediaQuery 767 *************************/
+
+@media(max-width:767px){
+    
+    /************************* Home *************************/
+
+    #PatternHome{
+        display: none;
+    }
+    #Home .container .row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20vh;
+    }
+    #Home .container .row h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 5vh;
+    }
+    #IllustrationHome{
+        height: auto;
+        width: auto;
+    }
+    
+    #Home .container div:nth-child(odd){
+        order: 1;
+    }
+
+    /************************* Focus *************************/
+
+    #PatternFocusTop{
+        width: 20vw;
+    }
+    #PatternFocusMiddle{
+        width: 20vw;
+        margin-top: 0;
+    }
+
+    /************************* Board *************************/
+
+    #Board .container{
+        height: fit-content;
+        padding-bottom: 10vh;
+        padding-top: 10vh;
+    }
+        
+    #Board .container .row{
+        height: fit-content;
+    }
+
+    /************************* App *************************/
+
+    #App .container .row{
+        height:fit-content;
+        padding-bottom: 10vh;
+        padding-top: 10vh;
+        text-align: center;
+    }
+
+    #AppIcons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #AppIcons img{
+        margin: 5vh;
+    }
+
+    #AppIcons img:nth-child(even){
+        order:1;
+    }
+
+    #AppIcons img:nth-child(odd){
+        order:2;
+    }
+
+    #AppPhone img{
+        margin:auto;
+    }
+
+    /************************* Contact *************************/
+
+}

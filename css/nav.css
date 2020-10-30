@@ -1,0 +1,84 @@
+:root{
+    --bg: #202743;
+    --white: #FFFFFF;
+}
+.navbar-dark{
+    background-color: var(--bg);
+    padding: 0;
+    padding-top: 20px;
+    position: absolute;
+    width: 95vw;
+    z-index: 1;
+}
+.navbar-dark .navbar-header img{
+    padding:10px;
+    width: 5rem;
+}
+.navbar-dark .navbar-header .navbar-brand{
+    font-size: 1rem;
+}
+
+.navbar-dark .navbar-toggler{
+    border: 0;
+    margin-right: 5vw;
+}
+
+.navbar-dark .navbar-toggler span{
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #FFFFFF;
+}
+
+.nav-link:hover{
+    color: #000;
+}
+
+#SideNav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#SideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#SideNav a:hover {
+    color: #f1f1f1;
+}
+
+#SideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+@media(max-width:767px){
+    .navbar-dark .navbar-nav{
+        display: none;
+    }
+    
+    #SideNav {
+        padding-top: 15px;
+    }
+
+    #SideNav a {
+        font-size: 18px;
+    }
+}
