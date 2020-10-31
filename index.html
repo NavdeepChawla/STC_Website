@@ -58,7 +58,9 @@
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quaerat consequatur quisquam incidunt quibusdam tempora sed harum nam inventore explicabo aliquam eligendi, porro recusandae qui esse, laborum asperiores autem eius!</p>
                             </div>
                         </div>
-
+                        <img id="BigWave" src="imgs/ic_wave_big.svg" alt="">
+                        <img id="SmallWave" src="imgs/ic_wave_small.svg" alt="">
+                        
                     </div>
                 </div>
             </section>
@@ -223,33 +225,44 @@
 
                     </div>
                     
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 align-self-center">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-8 col-lg-6">
                             <h2 class="text-center">Contact Us</h2>
                             <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita vitae esse ut excepturi id iste praesentium exercitationem officia laboriosam? Ea architecto placeat, asperiores natus dolore laboriosam quis nisi obcaecati nesciunt!</p>
                             <form action="">
                                 <div class="form-group">
+                                    
                                     <label for="ContactName">Full Name</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user icon"></i></span>
+                                    <div class="input-group row">
+                                        <div class="col-2 d-flex justify-content-center align-items-center">
+                                            <img src="imgs/ic_contact_name.svg" alt="">
                                         </div>
-                                        <input type="text" class="form-control" id="ContactName" placeholder="Enter Your Name">
+                                        <div class="col-10">
+                                            <input type="text" class="form-input" id="ContactName" placeholder="Enter Your Name">
+                                    
+                                        </div>
                                     </div>
+
                                     <label for="ContactEmail">Email</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    <div class="input-group row">
+                                        <div class="col-2 d-flex justify-content-center align-items-center">
+                                            <img src="imgs/ic_contact_email.svg" alt="">
                                         </div>
-                                        <input type="text" class="form-control" id="ContactEmail" placeholder="Email Address">
-                                    </div>
-                                    <label for="ContactMessage">Email</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-commenting"></i></span>
+                                        <div class="col-10">
+                                            <input type="text" class="form-input" id="ContactEmail" placeholder="Email Address">
                                         </div>
-                                        <textarea class="form-control" id="ContactMessage" placeholder="Type Your Message"></textarea>
                                     </div>
+                                    
+                                    <label for="ContactMessage">Message</label>
+                                    <div class="input-group row">
+                                        <div class="col-2 d-flex justify-content-center align-items-center">
+                                            <img src="imgs/ic_contact_message.svg" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <textarea class="form-input" id="ContactMessage" placeholder="Type Your Message"></textarea>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </form>
                         </div>

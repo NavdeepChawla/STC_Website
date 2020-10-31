@@ -14,6 +14,7 @@
 }
 #Home .container .row{
     height: 100vh;
+    overflow: hidden;
 }
 
 #PatternHome{
@@ -22,6 +23,50 @@
         top:20vh;
         width: 20vw;
         height: 40vh;
+}
+
+#SmallWave{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25vw;
+    animation: smallwave 4s infinite;
+}
+
+#BigWave{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 40vw;
+    animation: bigwave 4s infinite;
+}
+
+@keyframes bigwave{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1.2);
+        bottom: 5vh;
+    }
+    100%{
+        transform: scaleY(1);
+        bottom:0
+    }
+}
+
+@keyframes smallwave{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1.1);
+        bottom: 2vh;
+    }
+    100%{
+        transform: scaleY(1);
+        bottom: 0;
+    }
 }
 
 /************************* Focus *************************/
@@ -121,6 +166,24 @@
     height: 100vh;
 }
 
+#Contact .container .row form .row{
+    height: fit-content;
+    background-color: #F8F8F8;
+    padding: 4vh;
+    border: solid 0.5vh var(--bg);
+    border-radius: 2vh;
+    margin: 0;
+}
+
+#Contact .container .row form .form-input{
+    width:100%;
+    margin: auto;
+    outline: none;
+    border: none;
+    background-color: #F8F8F8;
+    resize: none;
+}
+
 /************************* MediaQuery 767 *************************/
 
 @media(max-width:767px){
@@ -129,6 +192,12 @@
 
     #PatternHome{
         display: none;
+    }
+    #BigWave{
+        display: none;
+    }
+    #SmallWave{
+        display:none;
     }
     #Home .container .row{
         display: flex;
@@ -203,5 +272,11 @@
     }
 
     /************************* Contact *************************/
-
+    #Contact .container{
+        height: fit-content;
+    }
+    
+    #Contact .container .row{
+        height: fit-content;
+    }
 }
